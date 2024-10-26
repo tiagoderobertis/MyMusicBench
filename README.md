@@ -2,7 +2,8 @@
 
 <em>Project view</em>
 
-![Vista del proyecto](https://github.com/user-attachments/assets/bbfbdc62-adfe-43ea-a2d8-3c964987bdc2)
+![Vista del proyecto](https://github.com/user-attachments/assets/05affc14-e153-465a-bf7e-e22e4c8feb1d)
+
 
 <h2>Technologies used:</h2>
 <li>C#</li>
