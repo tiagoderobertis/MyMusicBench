@@ -9,7 +9,7 @@
 <li>C#</li>
 <li>Entity Framework Core</li>
 <li>Advanced LINQ Queries</li>
-<li>SQLite<li>
+<li>SQLite</i>
 <li>.NET Framework </li>
 <li>Windows Forms </li>
 ___
