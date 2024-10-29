@@ -14,6 +14,7 @@
 <li>Windows Forms </li>
 ___
 <p> :argentina: This project is only available in spanish. <p>
+<p> - Made with .NET 8</p>
 
 
 
