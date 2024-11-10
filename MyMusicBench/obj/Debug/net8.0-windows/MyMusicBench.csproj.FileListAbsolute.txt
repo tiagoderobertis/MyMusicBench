@@ -121,3 +121,4 @@ C:\Users\tiago\source\repos\MyProjects\MyMusicBench\MyMusicBench\obj\Debug\net8.
 C:\Users\tiago\source\repos\MyProjects\MyMusicBench\MyMusicBench\obj\Debug\net8.0-windows\MyMusicBench.pdb
 C:\Users\tiago\source\repos\MyProjects\MyMusicBench\MyMusicBench\obj\Debug\net8.0-windows\MyMusicBench.genruntimeconfig.cache
 C:\Users\tiago\source\repos\MyProjects\MyMusicBench\MyMusicBench\obj\Debug\net8.0-windows\ref\MyMusicBench.dll
+C:\Users\tiago\source\repos\MyProjects\MyMusicBench\MyMusicBench\obj\Debug\net8.0-windows\MyMusicBench.sourcelink.json

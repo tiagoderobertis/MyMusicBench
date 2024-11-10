@@ -21,6 +21,7 @@ namespace MyMusicBench
                 context.Database.Migrate();
                 Application.Run(new Form1(context));
             }
+            
 
 
         }

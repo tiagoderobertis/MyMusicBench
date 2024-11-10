@@ -34,12 +34,19 @@
             btn_getAllSongs = new Button();
             btn_addSongs = new Button();
             dgv_SongsList = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            songBindingSource1 = new BindingSource(components);
             songBindingSource = new BindingSource(components);
             txt_songName = new TextBox();
             txt_songAuthor = new TextBox();
             panel1 = new Panel();
             txt_songToDelete = new TextBox();
             dgv_songsToDelete = new DataGridView();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
             btn_searchSongByName = new Button();
             btn_deleteSong = new Button();
             btn_editSong = new Button();
@@ -59,33 +66,31 @@
             btn_orderSongsByNameZtoA = new Button();
             label4 = new Label();
             btn_selectSongsFromAuthor = new Button();
-            songBindingSource1 = new BindingSource(components);
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            label5 = new Label();
+            panelBarraTitulo = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgv_SongsList).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)songBindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)songBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgv_songsToDelete).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)songBindingSource1).BeginInit();
+            panelBarraTitulo.SuspendLayout();
             SuspendLayout();
             // 
             // Title
             // 
             Title.Anchor = AnchorStyles.Top;
             Title.AutoSize = true;
+            Title.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             Title.ForeColor = Color.White;
-            Title.Location = new Point(366, 9);
+            Title.Location = new Point(12, 13);
             Title.Name = "Title";
-            Title.Size = new Size(95, 15);
+            Title.Size = new Size(97, 15);
             Title.TabIndex = 0;
             Title.Text = "My Music Bench";
             // 
             // lbl_show
             // 
             lbl_show.BackColor = Color.White;
+            lbl_show.ForeColor = Color.Red;
             lbl_show.Location = new Point(251, 560);
             lbl_show.Name = "lbl_show";
             lbl_show.Size = new Size(320, 21);
@@ -132,6 +137,32 @@
             dgv_SongsList.Size = new Size(242, 230);
             dgv_SongsList.TabIndex = 4;
             dgv_SongsList.CellClick += dgv_SongsList_CellClick;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            dataGridViewTextBoxColumn1.HeaderText = "Id";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.DataPropertyName = "SongName";
+            dataGridViewTextBoxColumn2.HeaderText = "SongName";
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.DataPropertyName = "SongAuthor";
+            dataGridViewTextBoxColumn3.HeaderText = "SongAuthor";
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // songBindingSource1
+            // 
+            songBindingSource1.DataSource = typeof(Models.Song);
             // 
             // txt_songName
             // 
@@ -183,6 +214,28 @@
             dgv_songsToDelete.TabIndex = 9;
             dgv_songsToDelete.Visible = false;
             dgv_songsToDelete.CellClick += dgv_songsToDelete_CellClick;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.DataPropertyName = "Id";
+            dataGridViewTextBoxColumn4.HeaderText = "Id";
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.ReadOnly = true;
+            dataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewTextBoxColumn5.DataPropertyName = "SongName";
+            dataGridViewTextBoxColumn5.HeaderText = "SongName";
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewTextBoxColumn6.DataPropertyName = "SongAuthor";
+            dataGridViewTextBoxColumn6.HeaderText = "SongAuthor";
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // btn_searchSongByName
             // 
@@ -327,9 +380,10 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Location = new Point(-4, 191);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 43);
             panel2.Name = "panel2";
-            panel2.Size = new Size(417, 1);
+            panel2.Size = new Size(800, 1);
             panel2.TabIndex = 20;
             // 
             // btn_orderSongsByAuthorAToZ
@@ -409,53 +463,29 @@
             btn_selectSongsFromAuthor.Visible = false;
             btn_selectSongsFromAuthor.Click += btn_selectSongsFromAuthor_Click;
             // 
-            // songBindingSource1
+            // label5
             // 
-            songBindingSource1.DataSource = typeof(Models.Song);
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(251, 541);
+            label5.Name = "label5";
+            label5.Size = new Size(91, 19);
+            label5.TabIndex = 16;
+            label5.Text = "Error Output";
             // 
-            // dataGridViewTextBoxColumn1
+            // panelBarraTitulo
             // 
-            dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            dataGridViewTextBoxColumn1.HeaderText = "Id";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.ReadOnly = true;
-            dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.DataPropertyName = "SongName";
-            dataGridViewTextBoxColumn2.HeaderText = "SongName";
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.DataPropertyName = "SongAuthor";
-            dataGridViewTextBoxColumn3.HeaderText = "SongAuthor";
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            dataGridViewTextBoxColumn4.DataPropertyName = "Id";
-            dataGridViewTextBoxColumn4.HeaderText = "Id";
-            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            dataGridViewTextBoxColumn4.ReadOnly = true;
-            dataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            dataGridViewTextBoxColumn5.DataPropertyName = "SongName";
-            dataGridViewTextBoxColumn5.HeaderText = "SongName";
-            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            dataGridViewTextBoxColumn6.DataPropertyName = "SongAuthor";
-            dataGridViewTextBoxColumn6.HeaderText = "SongAuthor";
-            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            dataGridViewTextBoxColumn6.ReadOnly = true;
+            panelBarraTitulo.Controls.Add(Title);
+            panelBarraTitulo.Controls.Add(btn_closeForm);
+            panelBarraTitulo.Dock = DockStyle.Top;
+            panelBarraTitulo.Location = new Point(0, 0);
+            panelBarraTitulo.Name = "panelBarraTitulo";
+            panelBarraTitulo.Size = new Size(800, 43);
+            panelBarraTitulo.TabIndex = 26;
+            panelBarraTitulo.MouseDown += panelBarraTitulo_MouseDown;
+            panelBarraTitulo.MouseMove += panelBarraTitulo_MouseMove;
+            panelBarraTitulo.MouseUp += panelBarraTitulo_MouseUp;
             // 
             // Form1
             // 
@@ -464,16 +494,16 @@
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(800, 600);
             Controls.Add(lbl_show);
+            Controls.Add(panel2);
             Controls.Add(btn_selectSongsFromAuthor);
             Controls.Add(btn_orderSongsByNameZtoA);
             Controls.Add(btn_orderSongsByNameAToZ);
             Controls.Add(btn_orderSongsByAuthorZToA);
             Controls.Add(btn_orderSongsByAuthorAToZ);
-            Controls.Add(panel2);
             Controls.Add(btn_orderSongsByName);
             Controls.Add(btn_orderSongsByAuthor);
-            Controls.Add(btn_closeForm);
             Controls.Add(label2);
+            Controls.Add(label5);
             Controls.Add(label3);
             Controls.Add(label4);
             Controls.Add(label1);
@@ -485,13 +515,13 @@
             Controls.Add(btn_searchSongByName);
             Controls.Add(dgv_songsToDelete);
             Controls.Add(txt_songToDelete);
-            Controls.Add(Title);
-            Controls.Add(panel1);
             Controls.Add(txt_songAuthor);
             Controls.Add(txt_songName);
             Controls.Add(dgv_SongsList);
             Controls.Add(btn_addSongs);
             Controls.Add(btn_getAllSongs);
+            Controls.Add(panelBarraTitulo);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             MaximumSize = new Size(800, 600);
             MinimumSize = new Size(800, 600);
@@ -499,9 +529,11 @@
             Text = "My Music Bench";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dgv_SongsList).EndInit();
+            ((System.ComponentModel.ISupportInitialize)songBindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)songBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgv_songsToDelete).EndInit();
-            ((System.ComponentModel.ISupportInitialize)songBindingSource1).EndInit();
+            panelBarraTitulo.ResumeLayout(false);
+            panelBarraTitulo.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -551,5 +583,7 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private Label label5;
+        private Panel panelBarraTitulo;
     }
 }

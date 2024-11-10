@@ -210,10 +210,12 @@ namespace MyMusicBench
             if (
                 btn_orderSongsByAuthorZToA.Visible == true ||
                 btn_orderSongsByAuthorAToZ.Visible == true
-                ) { 
-            btn_orderSongsByAuthorZToA.Visible = false;
-            btn_orderSongsByAuthorAToZ.Visible = false;
-            } else
+                )
+            {
+                btn_orderSongsByAuthorZToA.Visible = false;
+                btn_orderSongsByAuthorAToZ.Visible = false;
+            }
+            else
             {
                 btn_orderSongsByAuthorZToA.Visible = true;
                 btn_orderSongsByAuthorAToZ.Visible = true;
@@ -223,7 +225,7 @@ namespace MyMusicBench
         private void btn_orderSongsByName_Click(object sender, EventArgs e)
         {
             if (
-                btn_orderSongsByNameZtoA .Visible == true ||
+                btn_orderSongsByNameZtoA.Visible == true ||
                 btn_orderSongsByNameAToZ.Visible == true
                 )
             {
@@ -236,5 +238,30 @@ namespace MyMusicBench
                 btn_orderSongsByNameAToZ.Visible = true;
             }
         }
-    } 
+
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+
+        private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+
+        private void panelBarraTitulo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+
+        private void panelBarraTitulo_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+    }
 }

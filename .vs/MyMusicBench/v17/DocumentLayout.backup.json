@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\mymusicbench\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|solutionrelative:mymusicbench\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|c:\\users\\tiago\\source\\repos\\myprojects\\mymusicbench\\mymusicbench\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|solutionrelative:mymusicbench\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\mymusicbench\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|solutionrelative:mymusicbench\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|c:\\users\\tiago\\source\\repos\\myprojects\\mymusicbench\\mymusicbench\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|solutionrelative:mymusicbench\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|c:\\users\\tiago\\source\\repos\\myprojects\\mymusicbench\\mymusicbench\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|solutionrelative:mymusicbench\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|c:\\users\\tiago\\source\\repos\\myprojects\\mymusicbench\\mymusicbench\\dataaccess\\modelsrepo\\songsrepo\\songsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|solutionrelative:mymusicbench\\dataaccess\\modelsrepo\\songsrepo\\songsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|c:\\users\\tiago\\source\\repos\\myprojects\\mymusicbench\\mymusicbench\\connection\\mymusicbenchcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A86170B-6276-48DB-A579-AABD8399427A}|MyMusicBench\\MyMusicBench.csproj|solutionrelative:mymusicbench\\connection\\mymusicbenchcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Form1.cs",
               "RelativeDocumentMoniker": "MyMusicBench\\Form1.cs",
@@ -43,29 +55,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Song.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Models\\Song.cs",
+              "RelativeDocumentMoniker": "MyMusicBench\\Models\\Song.cs",
+              "ToolTip": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Models\\Song.cs",
+              "RelativeToolTip": "MyMusicBench\\Models\\Song.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:36:55.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Program.cs",
+              "RelativeDocumentMoniker": "MyMusicBench\\Program.cs",
+              "ToolTip": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Program.cs",
+              "RelativeToolTip": "MyMusicBench\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T19:04:55.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyMusicBenchContext.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Connection\\MyMusicBenchContext.cs",
+              "RelativeDocumentMoniker": "MyMusicBench\\Connection\\MyMusicBenchContext.cs",
+              "ToolTip": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Connection\\MyMusicBenchContext.cs",
+              "RelativeToolTip": "MyMusicBench\\Connection\\MyMusicBenchContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAACRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T19:04:37.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Form1.cs",
               "RelativeDocumentMoniker": "MyMusicBench\\Form1.cs",
               "ToolTip": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\Form1.cs",
               "RelativeToolTip": "MyMusicBench\\Form1.cs",
-              "ViewState": "AgIAAOkAAAAAAAAAAIAwwO4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAApwMcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T02:53:13.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SongsRepository.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\DataAccess\\ModelsRepo\\SongsRepo\\SongsRepository.cs",
               "RelativeDocumentMoniker": "MyMusicBench\\DataAccess\\ModelsRepo\\SongsRepo\\SongsRepository.cs",
               "ToolTip": "C:\\Users\\tiago\\source\\repos\\MyProjects\\MyMusicBench\\MyMusicBench\\DataAccess\\ModelsRepo\\SongsRepo\\SongsRepository.cs",
               "RelativeToolTip": "MyMusicBench\\DataAccess\\ModelsRepo\\SongsRepo\\SongsRepository.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAawFkAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T21:24:49.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T21:24:49.849Z"
             }
           ]
         },
