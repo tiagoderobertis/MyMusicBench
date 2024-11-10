@@ -7,11 +7,11 @@
 
 <h2>Technologies used ✅</h2>
 <li>C#</li>
+<li>Windows Forms </li>
 <li>Entity Framework Core</li>
 <li>Advanced LINQ Queries</li>
 <li>SQLite</i>
-<li>.NET Framework </li>
-<li>Windows Forms </li>
+
 ___
 <p> :argentina: This project is only available in spanish. <p>
 <p> - Made with .NET 8</p>
